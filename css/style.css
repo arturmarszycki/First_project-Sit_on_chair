@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 1200px;
+}
+nav {
+    background-color: #111;
+    height: 60px;
+    padding: 20px;
+}
+.logo {
+    text-transform: uppercase;
+    width: 200px;
+    font-size: 20px;
+    color: white;
+    float: left;
+    text-align: right;
+    font-weight: 700;
+    background-color: #111;
+}
+.different-word {
+    color: #4fd4a9;
+    background-color: #111;
+}
+ul {
+    background-color: #111;
+    float: right;
+}
+li {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 150px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #111;
+}
+.top-section {
+    clear: both;
+}
+.left-button {
+    background: linear-gradient(to bottom, rgba(230,227,247,1) 0%, rgba(211,202,237,1) 37%, rgba(198,190,233,1) 57%, rgba(184,182,231,1) 100%);
+    float: left;
+    font-size: 60px;
+    width: 100px;
+    padding-top: 140px;
+    height: 360px;
+    text-align: right;
+    color: #4fd4a9;
+}
+.right-button {
+    background: linear-gradient(to bottom, rgba(230,227,247,1) 0%, rgba(211,202,237,1) 37%, rgba(198,190,233,1) 57%, rgba(184,182,231,1) 100%);
+    float: left;
+    font-size: 60px;
+    width: 100px;
+    padding-top: 140px;
+    height: 360px;
+    color: #4fd4a9;
+}
+.main-image {
+    background: linear-gradient(to bottom, rgba(230,227,247,1) 0%, rgba(211,202,237,1) 37%, rgba(198,190,233,1) 57%, rgba(184,182,231,1) 100%);
+    float: left;
+    width: 500px;
+    height: 360px;
+}
+.description {
+    background: linear-gradient(to bottom, rgba(230,227,247,1) 0%, rgba(211,202,237,1) 37%, rgba(198,190,233,1) 57%, rgba(184,182,231,1) 100%);
+    float: left;
+    width: 500px;
+    height: 360px;
+}
+.big-title {
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60px;
+}
+.different-word1 {
+    color: #4fd4a9;
+    font-weight: 700;
+}
+.main-description {
+    width: 300px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.see-more {
+    text-align: center;
+    width: 240px;
+    height: 50px;
+    color: white;
+    background-color: #4fd4a9;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    right: -130px;
+    bottom: -5px;
+}
+.gallery {
+    background-color: #fff;
+    clear: both;
+    margin-top: 30px;
+}
+.left-image {
+    float: left;
+    width: 330px;
+    margin-left: 80px;
+    height: 225px;
+    margin-top: 30px;
+}
+.middle-image {
+    float: left;
+    width: 330px;
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 225px;
+    margin-top: 30px;
+}
+.right-image {
+    float: left;
+    width: 330px;
+    margin-right: 80px;
+    height: 240px;
+    margin-top: 30px;
+}
+.rule-section {
+    clear: both;
+}
