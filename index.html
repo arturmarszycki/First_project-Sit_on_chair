@@ -6,24 +6,24 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <div class="logo">Sit <span class="different-word">on</span> chair</div>
+                <div class="logo"><a href="#">Sit <span class="different-word">on</span> chair</a></div>
                 <div class="menu">
                     <ul>
-                        <li>O firmie</li>
-                        <li>Galeria</li>
-                        <li>Kontakt</li>
+                        <li><a href="#">O firmie</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <section class="top-section">
-            <div class="left-button">&lt;</div>
+            <div class="direct-button"><a href="#">&lt;</a></div>
             <div class="main-image">
                 <img src="images/black_chair.png">
             </div>
@@ -32,87 +32,102 @@
                 <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut dolor purus. Pellentesque eget porta lorem. Donec eget auctor urna.</p>
                 <input class="see-more" type="submit" name="see-more" value="Zobacz więcej">
             </div>
-            <div class="right-button">&gt;</div>
+            <div class="direct-button"><a href="#">&gt;</a></div>
         </section>
         <section class="gallery">
             <div class="left-image">
-                <div class="chair-name">Chair CLAIR</div>
+                <div class="chair-name">
+                    <span class="img-header">Chair CLAIR</span>
+                </div>
             </div>
             <div class="middle-image">
-                <div class="chair-name">Chair MARGARITA</div>
+                <div class="chair-name">
+                    <span class="img-header">Chair MARGARITA</span>
+                </div>
             </div>
             <div class="right-image">
-                <span class="img-info">Finds all inputs</span>
-                <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change
+                <span class="img-header">Finds all inputs</span>
+                <p class="img-description">Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change
                 when clicking the checkboxes since no click events have been linked</p>
-                <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
+                <p class="img-description">Notice there is no change when clicking the checkboxes since no click events have been linked</p>
             </div>
         </section>
         <section class="rule-section">
             <div class="section-header">Cennik</div>
             <div class="left-block">
+                <div class="circle">
+                    <div class="small-circle"></div>
+                </div>
                 <div class="block-title">Basic plan</div>
-                <div class="price">8599 PLN/MSC</div>
+                <div class="price"><span class="price-index">85</span><sup>99</sup> PLN/MSC</div>
                 <div class="rules">
-                    <div class="rule-detail">Zakup towaru + dowóz</div>
-                    <div class="rule-detail">Serwis</div>
+                    <div class="left-rule-one">Zakup towaru + dowóz</div>
+                    <div class="left-rule-two">Serwis</div>
                 </div>
-                <div class="add-button">
-                    <input type="submit" name="add" value="Dołącz">
-                </div>
+                <input class="add-button" type="submit" name="add" value="Dołącz">
             </div>
             <div class="middle-block">
-                <span class="block-title">Standard plan</span>
-                <div class="price">9599 PLN/MSC</div>
+                <div class="circle">
+                    <div class="small-circle"></div>
+                </div>
+                <div class="block-title">Standard plan</div>
+                <div class="price"><span class="price-index">95</span><sup>99</sup> PLN/MSC</div>
                 <div class="rules">
-                    <div class="rule-detail">Zakup towaru + dowóz</div>
-                    <div class="rule-detail">Serwis</div>
-                    <div class="rule-detail">Gwarancja 5 lat</div>
+                    <div class="middle-rule-one">Zakup towaru + dowóz</div>
+                    <div class="middle-rule-two">Serwis</div>
+                    <div class="middle-rule-three">Gwarancja 5 lat</div>
                 </div>
-                <div class="add-button">
-                    <input type="submit" name="add" value="Dołącz">
-                </div>
+                <input class="add-button" type="submit" name="add" value="Dołącz">
             </div>
             <div class="right-block">
-                <span class="block-title">Advance plan</span>
-                <div class="price">21100 PLN/MSC</div>
+                <div class="circle">
+                    <div class="small-circle"></div>
+                </div>
+                <div class="block-title">Advance plan</div>
+                <div class="price"><span class="price-index">211</span><sup>00</sup> PLN/MSC</div>
                 <div class="rules">
-                    <div class="rule-detail">Zakup towaru + dowóz</div>
-                    <div class="rule-detail">Serwis</div>
-                    <div class="rule-detail">Gwarancja 6 lat</div>
-                    <div class="rule-detail">Porady projektanta</div>
+                    <div class="right-rule-one">Zakup towaru + dowóz</div>
+                    <div class="right-rule-two">Serwis</div>
+                    <div class="right-rule-three">Gwarancja 6 lat</div>
+                    <div class="right-rule-four">Porady projektanta</div>
                 </div>
-                <div class="add-button">
-                    <input type="submit" name="add" value="Dołącz">
-                </div>
+                <input class="add-button" type="submit" name="add" value="Dołącz">
             </div>
         </section>
         <section class="bottom-section">
             <div class="section-header">Kontakt</div>
             <div class="contact-form">
-                <form></form>
+                <form>
+                    <label>
+                        <input class="form-name" type="text" name="name" placeholder=" Imię">
+                    </label>
+                    <label>
+                        <input class="form-email" type="email" name="email" placeholder=" email">
+                    </label>
+                    <textarea class="form-message" name="message" placeholder=" Wiadomość"></textarea>
+                </form>
             </div>
-            <div>
+            <div class="bottom-details">
                 <div class="bottom-image">
                     <img src="images/red_chair.png">
                 </div>
-                <div class="agree">
-                    <img src="images/form_ok.jpg">Zgadzam się na przetwarzanie danych osobowych
+                <div class="agree-img">
+                    <img src="images/form_ok.jpg">
                 </div>
-                <div class="send">
-                    <input type="submit" name="send" value="Wyślij">
-                </div>
+                <div class="agree-text">Zgadzam się na przetwarzanie danych osobowych</div>
+                <input class="send-button" type="submit" name="send" value="Wyślij">
             </div>
         </section>
         <footer>
             <div class="site-info">Copyright 2014 | All Rights Reserved - Sit On Chair</div>
             <div class="links">
-                <img src="images/flickr.png">
-                <img src="images/vimeo.png">
-                <img src="images/pinterest.png">
-                <img src="images/twitter.png">
+                <a href="#"><img src="images/flickr.png"></a>
+                <a href="#"><img src="images/vimeo.png"></a>
+                <a href="#"><img src="images/pinterest.png"></a>
+                <a href="#"><img src="images/twitter.png"></a>
             </div>
-            <div class="lower-logo">Sit on chair</div>
+            <div class="lower-logo">Sit <span class="different-word2">on</span> chair</div>
+            <div class="to-clear"></div>
         </footer>
     </div>
 </body>
