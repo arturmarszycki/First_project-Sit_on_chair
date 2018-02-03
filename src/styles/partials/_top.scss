@@ -1,0 +1,104 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  color: white;
+  line-height: 50px;
+  h3 {
+    width: 480px;
+    text-transform: uppercase;
+    font-weight: 600;
+    span {
+      color: $color;
+    }
+  }
+  ul {
+    width: 480px;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      text-transform: uppercase;
+      width: 150px;
+      text-align: right;
+      span {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .drop-down-menu {
+        display: none;
+        position: absolute;
+        background-color: #111;
+        width: 130px;
+        bottom: 840px;
+        right: 670px;
+        li {
+          display: block;
+          text-align: left;
+          line-height: 30px;
+          padding-left: 5px;
+          a {
+            text-decoration: none;
+            text-transform: none;
+            color: white;
+          }
+        }
+        &:before {
+          content: "";
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #111;
+          position: absolute;
+          left: 50px;
+          top: -10px;
+        }
+      }
+    }
+  }
+}
+.slider {
+  display: flex;
+  height: 450px;
+  align-items: center;
+  background: $gradient;
+  .slider-move {
+    width: 10%;
+    text-align: center;
+    font-size: 70px;
+    a {
+      text-decoration: none;
+      color: $color;
+    }
+  }
+  .main-picture {
+    width: 35%;
+    img {
+      position: relative;
+      left: -40px;
+    }
+  }
+  .main-description {
+    width: 45%;
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+      font-size: 36px;
+      span {
+        color: $color;
+      }
+    }
+    p {
+      color: #444;
+      margin: 30px 50px;
+    }
+    button {
+      background-color: $color;
+      width: 320px;
+      height: 70px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 26px;
+      border-radius: 10px;
+    }
+  }
+}

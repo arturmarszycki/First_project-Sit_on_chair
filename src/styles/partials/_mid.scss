@@ -1,0 +1,50 @@
+@mixin header {
+  position: absolute;
+  height: 80px;
+  background-color: rgba(255, 255, 255, .4);
+  bottom: 40px;
+  width: 100%;
+  h4 {
+    margin-top: 30px;
+    margin-left: 15px;
+    border-bottom: 8px solid $color;
+    width: 160px;
+    color: #222;
+  }
+}
+.gallery {
+  padding: 30px 0;
+  display: flex;
+  background-color: #fff;
+  .picture:first-of-type {
+    margin-left: 75px;
+    position: relative;
+    .picture-header {
+      @include header;
+    }
+  }
+  .picture:nth-of-type(2) {
+    margin: 0 30px;
+    position: relative;
+    .picture-header {
+      @include header;
+    }
+  }
+  .picture:last-of-type {
+    height: 250px;
+    border: 1px solid #888;
+    margin-right: 75px;
+    h4 {
+      margin-top: 30px;
+      margin-left: 15px;
+      border-bottom: 8px solid $color;
+      width: 160px;
+      color: #222;
+    }
+    p {
+      color: #888;
+      margin: 20px;
+      font-size: 14px;
+    }
+  }
+}
