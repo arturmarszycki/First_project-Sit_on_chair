@@ -1,63 +1,63 @@
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-Bold.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-Bold.woff') format('woff');
+  src: url('../../src/fonts/Raleway-Bold.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-ExtraBold.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-ExtraBold.woff') format('woff');
+  src: url('../../src/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-Light.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-Light.woff') format('woff');
+  src: url('../../src/fonts/Raleway-Light.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-SemiBold.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-SemiBold.woff') format('woff');
+  src: url('../../src/fonts/Raleway-SemiBold.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-Regular.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-Regular.woff') format('woff');
+  src: url('../../src/fonts/Raleway-Regular.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-Thin.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-Thin.woff') format('woff');
+  src: url('../../src/fonts/Raleway-Thin.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-Medium.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-Medium.woff') format('woff');
+  src: url('../../src/fonts/Raleway-Medium.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src: url('../../../src/fonts/Raleway-Black.woff2') format('woff2'),
-  url('../../../src/fonts/Raleway-Black.woff') format('woff');
+  src: url('../../src/fonts/Raleway-Black.woff2') format('woff2'),
+  url('../../src/fonts/Raleway-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
 }
@@ -74,4 +74,13 @@ body {
 .container {
   width: 1200px;
   margin: auto;
+}
+@mixin h2 {
+  text-transform: uppercase;
+  border-bottom: 10px solid $color;
+  width: 330px;
+  margin-left: 67px;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  color: #555;
 }

@@ -1,0 +1,94 @@
+.contact {
+  background-color: #fff;
+  h2 {
+    @include h2;
+  }
+  .contact-elements {
+    display: flex;
+    justify-content: space-around;
+    .contact-form {
+      width: 600px;
+      margin: 50px 67px;
+      input {
+        width: 600px;
+        height: 60px;
+        border: 1px solid $color;
+        margin-bottom: 30px;
+        font-size: 32px;
+        color: #888;
+        line-height: 46px;
+        padding-left: 10px;
+        &::placeholder {
+          font-weight: 300;
+        }
+      }
+      textarea {
+        width: 600px;
+        height: 200px;
+        border: 1px solid $color;
+        margin-bottom: 30px;
+        font-size: 32px;
+        color: #888;
+        line-height: 46px;
+        padding-left: 10px;
+        &::placeholder {
+          font-weight: 300;
+        }
+      }
+    }
+    .bottom-details {
+      .bottom-picture {
+        padding-left: 50px;
+        padding-top: 20px;
+      }
+      .form-agree {
+        padding: 30px 0;
+        display: flex;
+        .agree-img {
+          border: 1px solid $color;
+          padding: 5px;
+        }
+        .agree-text {
+          font-size: 20px;
+          width: 80%;
+          color: #888;
+          padding-right: 60px;
+        }
+      }
+      button {
+        width: 350px;
+        height: 70px;
+        background-color: $color;
+        color: white;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  .site-info {
+    width: 600px;
+    margin-left: 67px;
+    color: #888;
+    letter-spacing: 2px;
+  }
+  h3 {
+    margin-right: 67px;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+    span {
+      font-weight: 900;
+    }
+  }
+}
