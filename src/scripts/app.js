@@ -1,28 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(function () {
 
-    var agree = document.querySelector('.agree-img')
-    var agreeImg = document.querySelector('.agree-img img');
-    agree.addEventListener('click', function() {
-        if(agreeImg.style.display === "none") {
-            agreeImg.style.display = "block";
-        } else {
-            agreeImg.style.display = "none";
-        }
+    $('.nav-menu').children().mouseover(function() {
+        $(this).find('.drop-down-menu').show();
+    });
+    $('.nav-menu').children().mouseout(function() {
+        $(this).find('.drop-down-menu').hide();
     });
 
-    var navMenu = document.querySelector('.nav-menu').firstElementChild;
-    navMenu.addEventListener('mouseover', function() {
-        var dropMenu = this.querySelector('.drop-down-menu');
-        if (dropMenu) {
-            dropMenu.style.display = "block";
-        }
+
+    $('.agree-img').click(function(){
+        $(this).find('img').toggle();
     });
 
-    navMenu.addEventListener('mouseout', function() {
-        var dropMenu = this.querySelector('.drop-down-menu');
-        if (dropMenu) {
-            dropMenu.style.display = "none";
-        }
-    });
-
-})
+});
