@@ -1,11 +1,10 @@
 nav {
   display: flex;
-  justify-content: space-around;
   height: 50px;
   color: white;
   line-height: 50px;
   h3 {
-    width: 480px;
+    width: 400px;
     text-transform: uppercase;
     font-weight: 600;
     span {
@@ -15,8 +14,8 @@ nav {
   }
   ul {
     width: 480px;
+    display: flex;
     li {
-      display: inline-block;
       list-style-type: none;
       text-transform: uppercase;
       width: 150px;
@@ -29,11 +28,11 @@ nav {
       }
       .drop-down-menu {
         display: none;
-        position: absolute;
+        position: relative;
         background-color: #111;
         width: 130px;
-        bottom: 840px;
-        right: 670px;
+        top: 7px;
+        left: 45px;
         li {
           display: block;
           text-align: left;
@@ -72,37 +71,83 @@ nav {
       color: $color;
     }
   }
-  .main-picture {
-    width: 35%;
-    img {
+  ul {
+    list-style-type: none;
+    .slider-black {
+      display: flex;
+      align-items: center;
       position: relative;
-      left: -35px;
-    }
-  }
-  .main-description {
-    width: 45%;
-    text-align: center;
-    h1 {
-      text-transform: uppercase;
-      font-size: 40px;
-      font-weight: 700;
-      color: #333;
-      span {
-        color: $color;
+      .main-picture {
+        width: 35%;
+        img {
+          position: relative;
+          left: -35px;
+        }
+      }
+      .main-description {
+        width: 45%;
+        text-align: center;
+        h1 {
+          text-transform: uppercase;
+          font-size: 40px;
+          font-weight: 700;
+          color: #333;
+          span {
+            color: $color;
+          }
+        }
+        p {
+          color: #444;
+          margin: 30px 50px;
+        }
+        button {
+          background-color: $color;
+          width: 320px;
+          height: 70px;
+          text-transform: uppercase;
+          color: white;
+          font-size: 26px;
+          border-radius: 10px;
+        }
       }
     }
-    p {
-      color: #444;
-      margin: 30px 50px;
-    }
-    button {
-      background-color: $color;
-      width: 320px;
-      height: 70px;
-      text-transform: uppercase;
-      color: white;
-      font-size: 26px;
-      border-radius: 10px;
+    .slider-red {
+      display: none;
+      align-items: center;
+      position: relative;
+      .main-picture {
+        width: 35%;
+        img {
+          position: relative;
+          left: 50px;
+        }
+      }
+      .main-description {
+        width: 45%;
+        text-align: center;
+        h1 {
+          text-transform: uppercase;
+          font-size: 40px;
+          font-weight: 700;
+          color: #333;
+          span {
+            color: $color;
+          }
+        }
+        p {
+          color: #444;
+          margin: 30px 50px;
+        }
+        button {
+          background-color: $color;
+          width: 320px;
+          height: 70px;
+          text-transform: uppercase;
+          color: white;
+          font-size: 26px;
+          border-radius: 10px;
+        }
+      }
     }
   }
 }

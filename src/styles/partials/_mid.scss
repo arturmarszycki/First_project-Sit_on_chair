@@ -103,13 +103,13 @@
         background-color: #fafaff;
         color: #888;
         text-transform: uppercase;
-        font-weight: 700;
-        font-size: 18px;
+        font-weight: 800;
+        font-size: 20px;
         padding-top: 35px;
         span {
-          font-size: 44px;
+          font-size: 48px;
           sup {
-            font-size: 18px;
+            font-size: 20px;
             vertical-align: top;
           }
         }
@@ -120,6 +120,18 @@
           height: 39px;
           border-radius: 50%;
           background-color: #aaa;
+          left: 143px;
+          top: -33px;
+        }
+      }
+      .change-small {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 39px;
+          height: 39px;
+          border-radius: 50%;
+          background-color: #fff;
           left: 143px;
           top: -33px;
         }
@@ -145,8 +157,22 @@
         border-radius: 8px;
         text-transform: uppercase;
         background-color: $color;
-        color: white;
+        color: #fff;
         font-size: 18px;
+        font-weight: 500;
+      }
+    }
+    .change {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border: 2px solid #4fd4a9;
+        border-radius: 50%;
+        background-color: #4fd4a9;
+        top: -50px;
+        left: 125px;
       }
     }
   }
