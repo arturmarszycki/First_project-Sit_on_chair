@@ -19,6 +19,7 @@ nav {
       list-style-type: none;
       text-transform: uppercase;
       width: 150px;
+      position: relative;
       text-align: right;
       font-weight: 600;
       span {
@@ -28,11 +29,12 @@ nav {
       }
       .drop-down-menu {
         display: none;
-        position: relative;
+        position: absolute;
         background-color: #111;
         width: 130px;
-        top: 7px;
-        left: 45px;
+        top: 58px;
+        left: 58px;
+        z-index: 10;
         li {
           display: block;
           text-align: left;
