@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sit on chair</title>
     <link rel="stylesheet" href="../dist/css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -107,6 +108,74 @@
                 </div>
             </div>
         </section>
+        <section class="order">
+            <div class="header-part">
+                <div>
+                    <h2 class="order-left-header">skomponuj swoje krzesło</h2>
+                    <div class="green-bell"></div>
+                </div>
+                <div>
+                    <h2 class="order-right-header">podsumowanie</h2>
+                    <div class="green-bell"></div>
+                </div>
+            </div>
+            <div class="application">
+                <div class="choice-part">
+                    <div class="drop-down-list">
+                        <span class="list-label">Wybierz rodzaj</span>
+                        <span class="list-arrow"></span>
+                        <ul class="list-panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop-down-list">
+                        <span class="list-label">Wybierz kolor</span>
+                        <span class="list-arrow"></span>
+                        <ul class="list-panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop-down-list">
+                        <span class="list-label">Wybierz matriał</span>
+                        <span class="list-arrow"></span>
+                        <ul class="list-panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                </div>
+                <div class="image-part">
+                    <img src="images/red_chair.png" alt="">
+                </div>
+                <div class="summary-part">
+                    <div class="panel-left">
+                        <h4 class="chair-title"></h4>
+                        <span class="chair-color"></span>
+                        <span class="chair-pattern"></span>
+                        <span class="chair-transport"></span>
+                    </div>
+                    <div class="panel-right">
+                        <h4 class="chair-title value"></h4>
+                        <span class="chair-color value"></span>
+                        <span class="chair-pattern value"></span>
+                        <span class="chair-transport value"></span>
+                    </div>
+                    <div class="sum">
+                        <span class="sum-word">suma</span>
+                        <span class="sum-value"></span>
+                    </div>
+                    <button type="submit" class="order-button">zamawiam</button>
+                </div>
+            </div>
+        </section>
         <section class="contact">
             <h2>kontakt</h2>
             <div class="contact-elements">
@@ -148,6 +217,6 @@
             <h3>sit <span>on</span> chair</h3>
         </footer>
     </div>
-    <script src="scripts/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

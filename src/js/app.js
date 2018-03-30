@@ -1,6 +1,6 @@
 $(function () {
 
-    let menu = $('.drop-down-menu');
+    var menu = $('.drop-down-menu');
     $('.drop-parent, .drop-down-menu').hover(
         function() {
             menu.stop().slideDown();
