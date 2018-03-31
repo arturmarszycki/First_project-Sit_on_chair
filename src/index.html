@@ -110,69 +110,71 @@
         </section>
         <section class="order">
             <div class="header-part">
-                <div>
-                    <h2 class="order-left-header">skomponuj swoje krzesło</h2>
+                <div class="order-left-header">
+                    <h2>skomponuj swoje krzesło</h2>
                     <div class="green-bell"></div>
                 </div>
-                <div>
-                    <h2 class="order-right-header">podsumowanie</h2>
+                <div class="order-right-header">
+                    <h2>podsumowanie</h2>
                     <div class="green-bell"></div>
                 </div>
             </div>
             <div class="application">
-                <div class="choice-part">
-                    <div class="drop-down-list">
-                        <span class="list-label">Wybierz rodzaj</span>
-                        <span class="list-arrow"></span>
-                        <ul class="list-panel">
-                            <li>Clair</li>
-                            <li>Margarita</li>
-                            <li>Selena</li>
-                        </ul>
+                <div class="application-parts">
+                    <div class="choice-part">
+                        <div class="drop-down-list">
+                            <span class="list-label">Wybierz rodzaj</span>
+                            <span class="list-arrow"></span>
+                            <ul class="list-panel">
+                                <li>Clair</li>
+                                <li>Margarita</li>
+                                <li>Selena</li>
+                            </ul>
+                        </div>
+                        <div class="drop-down-list">
+                            <span class="list-label">Wybierz kolor</span>
+                            <span class="list-arrow"></span>
+                            <ul class="list-panel">
+                                <li>Czerwony</li>
+                                <li>Czarny</li>
+                                <li>Pomarańczowy</li>
+                            </ul>
+                        </div>
+                        <div class="drop-down-list">
+                            <span class="list-label">Wybierz matriał</span>
+                            <span class="list-arrow"></span>
+                            <ul class="list-panel">
+                                <li>Tkanina</li>
+                                <li>Skóra</li>
+                            </ul>
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="transport" data-transport-price="200">
+                            <label for="transport">Transport</label>
+                        </div>
                     </div>
-                    <div class="drop-down-list">
-                        <span class="list-label">Wybierz kolor</span>
-                        <span class="list-arrow"></span>
-                        <ul class="list-panel">
-                            <li>Czerwony</li>
-                            <li>Czarny</li>
-                            <li>Pomarańczowy</li>
-                        </ul>
+                    <div class="image-part">
+                        <img src="images/red_chair.png" alt="">
                     </div>
-                    <div class="drop-down-list">
-                        <span class="list-label">Wybierz matriał</span>
-                        <span class="list-arrow"></span>
-                        <ul class="list-panel">
-                            <li>Tkanina</li>
-                            <li>Skóra</li>
-                        </ul>
+                    <div class="summary-part">
+                        <div class="panel-left">
+                            <h4 class="chair-title">Twój fotel</h4>
+                            <span class="chair-color"></span>
+                            <span class="chair-pattern"></span>
+                            <span class="chair-transport"></span>
+                        </div>
+                        <div class="panel-right">
+                            <h4 class="chair-title value"></h4>
+                            <span class="chair-color value"></span>
+                            <span class="chair-pattern value"></span>
+                            <span class="chair-transport value"></span>
+                        </div>
+                        <div class="panel-sum">
+                            <span class="sum-word">suma</span>
+                            <span class="sum-value"></span>
+                        </div>
+                        <button type="submit" class="order-button">zamawiam</button>
                     </div>
-                    <div class="check-box">
-                        <input type="checkbox" id="transport" data-transport-price="200">
-                        <label for="transport">Transport</label>
-                    </div>
-                </div>
-                <div class="image-part">
-                    <img src="images/red_chair.png" alt="">
-                </div>
-                <div class="summary-part">
-                    <div class="panel-left">
-                        <h4 class="chair-title"></h4>
-                        <span class="chair-color"></span>
-                        <span class="chair-pattern"></span>
-                        <span class="chair-transport"></span>
-                    </div>
-                    <div class="panel-right">
-                        <h4 class="chair-title value"></h4>
-                        <span class="chair-color value"></span>
-                        <span class="chair-pattern value"></span>
-                        <span class="chair-transport value"></span>
-                    </div>
-                    <div class="sum">
-                        <span class="sum-word">suma</span>
-                        <span class="sum-value"></span>
-                    </div>
-                    <button type="submit" class="order-button">zamawiam</button>
                 </div>
             </div>
         </section>
@@ -195,12 +197,8 @@
                         <img src="images/red_chair.png" alt="">
                     </div>
                     <div class="form-agree">
-                        <div class="agree-img">
-                            <img src="images/form_ok.jpg">
-                        </div>
-                        <div class="agree-text">
-                            Zgadzam się na przetwarzanie danych osobowych
-                        </div>
+                        <input type="checkbox" id="agree">
+                        <label for="agree">Zgadzam się na przetwarzanie danych osobowych</label>
                     </div>
                     <button type="submit" name="send">wyślij</button>
                 </div>

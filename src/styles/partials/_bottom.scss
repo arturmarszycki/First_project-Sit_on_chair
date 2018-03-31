@@ -44,17 +44,50 @@
       .form-agree {
         padding: 30px 0;
         display: flex;
-        .agree-img {
-          width: 55px;
-          height: 50px;
-          border: 1px solid $color;
-          padding: 3px;
+        position: relative;
+        input {
+          height: 48px;
+          width: 48px;
+          display: block;
+          margin: 0;
+          opacity: 0;
+          position: absolute;
+          &:checked + label::after {
+            display: block;
+          }
         }
-        .agree-text {
-          font-size: 20px;
-          width: 80%;
+        label {
+          display: block;
           color: #888;
-          padding-right: 60px;
+          font-size: 20px;
+          margin-right: 70px;
+          height: 48px;
+          padding-left: 80px;
+          &:before {
+            content: "";
+            border: 1px solid $color;
+            width: 50px;
+            height: 48px;
+            position: absolute;
+            margin-top: 30px;
+            background-color: #fff;
+            display: block;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+          }
+          &:after {
+            content: "";
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            margin-top: 30px;
+            background: url(../../src/images/form_ok.jpg) no-repeat center;
+            display: none;
+            left: 1px;
+            top: 0;
+            cursor: pointer;
+          }
         }
       }
       button {
