@@ -163,7 +163,7 @@
           border-bottom: 1px solid #e7e7e7;
           border-left: 1px solid #e7e7e7;
           padding: 10px;
-          text-align: right;
+          text-align: center;
           h4 {
             font-size: 22px;
             color: $color;
@@ -181,16 +181,19 @@
           color: #555;
           font-size: 24px;
           clear: left;
-          padding: 10px;
           display: flex;
-          justify-content: space-between;
           .sum-word {
             margin: 0;
+            padding: 10px;
+            width: 200px;
           }
           .sum-value {
             font-weight: 600;
             color: $color;
             margin: 0;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
           }
         }
         button {

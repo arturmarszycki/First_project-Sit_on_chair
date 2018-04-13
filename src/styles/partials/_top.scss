@@ -73,81 +73,53 @@ nav {
       color: $color;
     }
   }
-  ul {
-    list-style-type: none;
-    .slider-black {
-      display: flex;
-      align-items: center;
+  .slider-content {
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    ul {
+      list-style-type: none;
       position: relative;
-      .main-picture {
-        width: 35%;
-        img {
-          position: relative;
-          left: -35px;
+      width: 200%;
+      left: -100%;
+      height: inherit;
+      li {
+        width: calc(100%/2);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        float: left;
+        .main-picture {
+          width: 45%;
         }
-      }
-      .main-description {
-        width: 45%;
-        text-align: center;
-        h1 {
-          text-transform: uppercase;
-          font-size: 40px;
-          font-weight: 700;
-          color: #333;
-          span {
-            color: $color;
+        .red-picture {
+          text-align: center;
+        }
+        .main-description {
+          width: 55%;
+          text-align: center;
+          h1 {
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: 800;
+            color: #333;
+            span {
+              color: $color;
+            }
           }
-        }
-        p {
-          color: #444;
-          margin: 30px 50px;
-        }
-        button {
-          background-color: $color;
-          width: 320px;
-          height: 70px;
-          text-transform: uppercase;
-          color: white;
-          font-size: 26px;
-          border-radius: 10px;
-        }
-      }
-    }
-    .slider-red {
-      display: none;
-      align-items: center;
-      position: relative;
-      .main-picture {
-        width: 35%;
-        img {
-          position: relative;
-          left: 50px;
-        }
-      }
-      .main-description {
-        width: 45%;
-        text-align: center;
-        h1 {
-          text-transform: uppercase;
-          font-size: 40px;
-          font-weight: 700;
-          color: #333;
-          span {
-            color: $color;
+          p {
+            color: #444;
+            margin: 30px 50px;
           }
-        }
-        p {
-          color: #444;
-          margin: 30px 50px;
-        }
-        button {
-          background-color: $color;
-          width: 320px;
-          height: 70px;
-          text-transform: uppercase;
-          color: white;
-          font-size: 26px;
-          border-radius: 10px;
+          button {
+            background-color: $color;
+            width: 320px;
+            height: 70px;
+            text-transform: uppercase;
+            color: white;
+            font-size: 26px;
+            border-radius: 10px;
+          }
         }
       }
     }

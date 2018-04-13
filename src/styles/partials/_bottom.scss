@@ -1,105 +1,107 @@
 .contact {
   background-color: #fff;
+  padding: 30px 0;
   h2 {
-    @include h2;
+    text-transform: uppercase;
+    border-bottom: 10px solid $color;
+    width: 330px;
+    margin-left: 70px;
+    letter-spacing: 2px;
+    color: #555;
   }
-  .contact-elements {
-    display: flex;
-    justify-content: space-around;
-    .contact-form {
-      width: 600px;
-      margin: 50px 67px;
-      input {
+  .contact-content {
+    .contact-elements {
+      display: flex;
+      justify-content: space-around;
+      .contact-form {
         width: 600px;
-        height: 60px;
-        border: 1px solid $color;
-        margin-bottom: 30px;
-        font-size: 32px;
-        color: #888;
-        line-height: 46px;
-        padding-left: 10px;
-        &::placeholder {
-          font-weight: 300;
-        }
-      }
-      textarea {
-        width: 600px;
-        height: 200px;
-        border: 1px solid $color;
-        margin-bottom: 30px;
-        font-size: 32px;
-        color: #888;
-        line-height: 46px;
-        padding-left: 10px;
-        &::placeholder {
-          font-weight: 300;
-        }
-      }
-    }
-    .bottom-details {
-      .bottom-picture {
-        padding-left: 50px;
-        padding-top: 20px;
-      }
-      .form-agree {
-        padding: 30px 0;
-        display: flex;
-        position: relative;
+        margin: 35px 70px;
         input {
-          height: 48px;
-          width: 48px;
-          display: block;
-          margin: 0;
-          opacity: 0;
-          position: absolute;
-          &:checked + label::after {
-            display: block;
-          }
-        }
-        label {
-          display: block;
+          width: 600px;
+          height: 60px;
+          border: 1px solid $color;
+          margin-bottom: 30px;
+          font-size: 32px;
           color: #888;
-          font-size: 20px;
-          margin-right: 70px;
-          height: 48px;
-          padding-left: 80px;
-          &:before {
-            content: "";
-            border: 1px solid $color;
-            width: 50px;
-            height: 48px;
-            position: absolute;
-            margin-top: 30px;
-            background-color: #fff;
-            display: block;
-            left: 0;
-            top: 0;
-            cursor: pointer;
-          }
-          &:after {
-            content: "";
-            width: 48px;
-            height: 48px;
-            position: absolute;
-            margin-top: 30px;
-            background: url(../../src/images/form_ok.jpg) no-repeat center;
-            display: none;
-            left: 1px;
-            top: 0;
-            cursor: pointer;
-          }
+          line-height: 46px;
+          padding-left: 10px;
+        }
+        textarea {
+          width: 600px;
+          height: 200px;
+          border: 1px solid $color;
+          margin-bottom: 30px;
+          font-size: 32px;
+          color: #888;
+          line-height: 46px;
+          padding-left: 10px;
         }
       }
-      button {
-        width: 350px;
-        height: 70px;
-        background-color: $color;
-        color: white;
-        text-transform: uppercase;
-        font-size: 30px;
-        font-weight: 700;
-        border-radius: 10px;
-        margin-top: 5px;
+      .bottom-details {
+        .bottom-picture {
+          padding-left: 50px;
+          padding-top: 20px;
+        }
+        .form-agree {
+          padding: 30px 0;
+          display: flex;
+          position: relative;
+          input {
+            height: 48px;
+            width: 48px;
+            display: block;
+            margin: 0;
+            opacity: 0;
+            position: absolute;
+            &:checked + label::after {
+              display: block;
+            }
+          }
+          label {
+            display: block;
+            color: #888;
+            font-size: 20px;
+            margin-right: 70px;
+            height: 48px;
+            padding-left: 80px;
+            &:before {
+              content: "";
+              border: 1px solid $color;
+              width: 50px;
+              height: 48px;
+              position: absolute;
+              margin-top: 30px;
+              background-color: #fff;
+              display: block;
+              left: 0;
+              top: 0;
+              cursor: pointer;
+            }
+            &:after {
+              content: "";
+              width: 48px;
+              height: 48px;
+              position: absolute;
+              margin-top: 30px;
+              background: url(../../src/images/form_ok.jpg) no-repeat center;
+              display: none;
+              left: 1px;
+              top: 0;
+              cursor: pointer;
+            }
+          }
+        }
+        button {
+          width: 350px;
+          height: 70px;
+          background-color: $color;
+          color: white;
+          text-transform: uppercase;
+          font-size: 30px;
+          font-weight: 700;
+          border-radius: 10px;
+          margin-top: 5px;
+        }
       }
     }
   }
@@ -123,7 +125,7 @@ footer {
     letter-spacing: 2px;
     font-size: 20px;
     span {
-      font-weight: 900;
+      font-weight: 800;
     }
   }
 }
