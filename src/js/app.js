@@ -154,6 +154,46 @@ $(function () {
         location.reload(true);
     });
 
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+        var agree = $('#agree').is(':checked');
+        var fine = true;
+        if(name.length < 2) {
+            $('.name-warn').css('visibility', 'visible');
+            fine = false;
+        } else {
+            $('.name-warn').css('visibility', 'hidden');
+        }
+        if(email.indexOf('@') === -1) {
+            $('.email-warn').css('visibility', 'visible');
+            fine = false;
+        } else {
+            $('.email-warn').css('visibility', 'hidden');
+        }
+        if(message.length < 7) {
+            $('.message-warn').css('visibility', 'visible');
+            fine = false;
+        } else {
+            $('.message-warn').css('visibility', 'hidden');
+        }
+        if(!agree) {
+            $('.agree-warn').css('visibility', 'visible');
+            fine = false;
+        } else {
+            $('.agree-warn').css('visibility', 'hidden');
+        }
+        if(fine) {
+            $('.send-info').css('visibility', 'visible');
+            $('#name').val("");
+            $('#email').val("");
+            $('#message').val("");
+            $('#agree').prop('checked', false);
+        }
+    })
+
 
 
 });

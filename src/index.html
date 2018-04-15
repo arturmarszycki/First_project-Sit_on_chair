@@ -184,30 +184,25 @@
         </section>
         <section class="contact">
             <h2>kontakt</h2>
-            <div class="contact-content">
-                <div class="contact-elements">
-                    <div class="contact-form">
-                        <form>
-                            <label>
-                                <input type="text" name="name" placeholder="Imię">
-                            </label>
-                            <label>
-                                <input type="email" name="email" placeholder="email">
-                            </label>
-                            <textarea name="message" placeholder="Wiadomość"></textarea>
-                        </form>
-                    </div>
-                    <div class="bottom-details">
-                        <div class="bottom-picture">
-                            <img src="images/red_chair.png" alt="">
-                        </div>
-                        <div class="form-agree">
-                            <input type="checkbox" id="agree">
-                            <label for="agree">Zgadzam się na przetwarzanie danych osobowych</label>
-                        </div>
+            <div class="contact-form">
+                <form>
+                    <fieldset class="form-left">
+                        <input type="text" id="name" name="name" placeholder="Imię">
+                        <p class="warn name-warn">Wpisz prawidłowe imię</p>
+                        <input type="email" id="email" name="email" placeholder="email">
+                        <p class="warn email-warn">Wpisz prawidłowy email</p>
+                        <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
+                        <p class="warn message-warn">Wpisz wiadomość</p>
+                    </fieldset>
+                    <fieldset class="form-right">
+                        <img src="images/red_chair.png" alt="">
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree">Zgadzam się na przetwarzanie danych osobowych</label>
+                        <p class="warn agree-warn">Zaznacz zgodę</p>
                         <button type="submit" name="send">wyślij</button>
-                    </div>
-                </div>
+                        <p class="send-info">Wiadomość wysłana</p>
+                    </fieldset>
+                </form>
             </div>
         </section>
         <footer>
